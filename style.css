@@ -6,7 +6,7 @@
 }
 
 .header{
-    height: 100vh;
+    height: 70vh;
 }
 .navbar-style{
     box-shadow: 0 5px 10px #efefee;
@@ -24,6 +24,7 @@ li a{
     color: black;
     font-size: 18px;
     word-spacing: 1px;
+    
 }
 .big-text
 {
@@ -37,6 +38,7 @@ a.btn
     width: 150px;
     padding: 10px;
     border-radius: 20px;
+    font-size: 20px;
 
 }
 a.btn-first{
@@ -88,11 +90,20 @@ footer .row{
     padding: 10px;
     font-size: 18px;
 }
+footer .col:nth-child(2), footer .col:nth-child(3){
+    flex-basis:15%;
+}
 
 footer .col h3{
     width: fit-content;
     margin-bottom: 40px ;
     position: relative;
+}
+footer .col p{
+    
+    padding-top: 20px;
+    max-width: 160px;
+    
 }
 .email-id{
     width:fit-content;
@@ -126,6 +137,7 @@ form{
     border: 0;
     outline: none;
     font-size: 17px;
+    padding: 3px 15px;
  }
 
  form button{
@@ -138,3 +150,214 @@ form{
     font-size: 16px;
     color: #ccc;
  }
+
+  footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+ }
+ 
+ hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+ }
+ .copyright{
+    text-align: center;
+ }
+
+ .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    overflow:hidden;
+ }
+ .underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation:moving 2s linear infinite
+ 
+ }
+ @keyframes moving{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 100%;
+    }
+ }
+
+ @media(max-width :700px){
+    footer{
+        bottom: unset;
+    }
+    footer .col{
+        flex-basis:25%;
+        
+        font-size: 18px;
+    }
+    footer .col:nth-child(2), footer .col:nth-child(3){
+        flex-basis:100%;
+    }
+
+ }
+
+
+section{
+width: 100%;
+height: 100vh;
+background-size: cover;
+
+
+}
+
+section .leftBox{
+
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+section .leftBox .content{
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    transition: .5s;
+}
+section .leftBox .content:hover{
+background: darkorange;
+}
+
+section .leftBox .content h1{
+margin: 0px;
+padding: 0px;
+font-size: 50px;
+text-transform: uppercase;
+}
+
+section .leftBox .content p{
+    margin: 10px 0 0 ;
+    padding: 0px;
+    font-size: 17px;
+}
+
+section .events{
+    position: relative;
+    width: 50%;
+    height: 90vh;
+    background: rgba(0,0,0,0.5);
+    float: right;
+    box-sizing: border-box;
+
+}
+
+section .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin:0;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+section .events ul li{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+
+section .events ul li .time{
+    position : relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+section .events ul li:hover .time{
+    background: darkorange;
+}
+
+
+section .events ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+section .events ul li .time h2 span{
+    font-size: 30px;
+}
+
+section .events ul li .details{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+section .events ul li .details h3{
+position: relative;
+margin: 0;
+padding: 0;
+font-size: 22px;
+}
+
+section .events ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section .events ul li .details a{
+   display: inline-block ;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 10px 15px;
+   border: 2px solid #262626;
+   margin-top: 15px;
+   font-size: 18px;
+   transition: .5s;
+   
+}
+
+section .events ul li .details a:hover{
+
+    background: darkorange;
+    color: #fff;
+    border-color: darkorange;
+}
