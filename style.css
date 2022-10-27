@@ -60,6 +60,48 @@ a.btn:hover{
     margin: 30px 0px;
 
 }
+
+.roww{
+ background-color: rgb(247, 245, 245);
+ 
+ display: flex;
+ align-items: center;
+ align-content: center;
+    
+   
+}
+.Faculty img{
+    width: 75px;
+}
+
+.second-half{
+    margin: 35px 0px;
+    padding: 40px 0px;
+
+}
+
+.undergrad{
+    margin: 60px 110px;
+    padding: 15px 23px;
+
+}
+
+.Faculty{
+    margin: 0px 78px;
+    padding: 8px 10px;
+
+
+}
+
+.Staff{
+    margin: 0px 66px;
+    padding: 0px 50px;
+}
+
+.projects{
+    margin: 0px 53px;
+    padding: 0px 100px;
+}
 footer{
     width: 100%;
     position: relative;
